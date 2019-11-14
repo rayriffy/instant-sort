@@ -15,13 +15,18 @@ Examples
 
 ```javascript
 const { sort } = require('instant-sort')
-
+ 
 function isSorted(arr) {
-  return arr.reduce((p, v) => p && p <= v, true)
+	originalArr = arr.toString() 
+	arr.sort(function(a,b){
+		return a - b; 
+  })
+
+	return arr.toString() === originalArr;
 }
-
+ 
 const unsortedArray = [4, 1, 5, 2, 6, 9]
-
+ 
 console.log(isSorted(unsortedArray)) // false
 console.log(isSorted(sort(unsortedArray))) // true
 ```
