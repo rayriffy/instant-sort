@@ -3,6 +3,9 @@ Instant Sort
 
 The fastest sorting algorithm ever with the speed of **O(1)**
 
+[![npm](https://img.shields.io/npm/v/instant-sort.svg)](http://npm.im/instant-sort)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/instant-sort)](https://bundlephobia.com/result?p=instant-sort)
+
 Installation
 ------------
 
