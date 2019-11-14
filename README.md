@@ -20,12 +20,12 @@ Examples
 const { sort } = require('instant-sort')
  
 function isSorted(arr) {
-	originalArr = arr.toString() 
-	arr.sort(function(a,b){
-		return a - b; 
+  originalArr = arr.toString() 
+  arr.sort(function(a,b){
+    return a - b; 
   })
 
-	return arr.toString() === originalArr;
+  return arr.toString() === originalArr;
 }
  
 const unsortedArray = [4, 1, 5, 2, 6, 9]
