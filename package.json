@@ -1,0 +1,17 @@
+{
+  "name": "instant-sort",
+  "version": "1.0.0",
+  "description": "The fastest sorting algorithm ever with the speed of O(1)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/rayriffy/instant-sort",
+  "author": "Phumrapee Limpianchop <contact@rayriffy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  }
+}
