@@ -1,3 +1,5 @@
 src/
+.github/
+jest.config.js
 README.md
 tsconfig.json

@@ -39,6 +39,27 @@ TypeScript
 
 Yes, this module is TypeScript-friendly! No need for DefinitelyTyped
 
+```jsx
+const res = sort<Omit<IAnime, 'genres'>>([
+  {
+    name : {
+      romaji: 'Toaru Kagaku no Railgun T',
+      english: 'A Certain Scientific Railgun T',
+      native: 'とある科学の超電磁砲T',
+    },
+  },
+  {
+    name : {
+      romaji: 'Itai no wa Iya nanode Bougyo-Ryoku ni Kyokufuri Shitai to Omoimasu',
+      english: `BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.`,
+      native: '痛いのは嫌なので防御力に極振りしたいと思います。'
+    },
+  },
+])
+
+console.log(res) // Should return sorted array
+```
+
 Contributing
 ------------
 
