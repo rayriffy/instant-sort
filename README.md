@@ -39,7 +39,7 @@ TypeScript
 
 Yes, this module is TypeScript-friendly! No need for DefinitelyTyped
 
-```jsx
+```tsx
 const res = sort<Omit<IAnime, 'genres'>>([
   {
     name : {
