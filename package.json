@@ -4,6 +4,15 @@
   "description": "The fastest sorting algorithm ever with the speed of O(1)",
   "main": "dist/",
   "types": "dist/",
+  "keywords": [
+    "sort",
+    "sorted",
+    "sorting",
+    "array",
+    "arr",
+    "asc",
+    "desc"
+  ],
   "repository": "https://github.com/rayriffy/instant-sort",
   "author": "Phumrapee Limpianchop <contact@rayriffy.com>",
   "license": "MIT",
@@ -11,11 +20,13 @@
     "@types/jest": "^24.9.1",
     "jest": "^25.1.0",
     "ts-jest": "^25.0.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "uglify-js": "^3.7.7"
   },
   "scripts": {
-    "build": "tsc",
-    "prepublish": "tsc",
+    "build": "tsc && yarn minify",
+    "minify": "uglifyjs --compress --mangle --output dist/index.js -- dist/index.js",
+    "prepublish": "yarn build",
     "test": "jest ./__test__"
   }
 }
