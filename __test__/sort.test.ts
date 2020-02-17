@@ -1,4 +1,4 @@
-import { sort } from '../'
+import { sort } from '../src'
 
 it('should pass if not passing any types', () => {
   const res = sort([1, 2, 3, 4])
