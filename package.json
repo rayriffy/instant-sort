@@ -1,6 +1,6 @@
 {
   "name": "instant-sort",
-  "version": "1.1.1",
+  "version": "1.1.4",
   "description": "The fastest sorting algorithm ever with the speed of O(1)",
   "main": "src",
   "keywords": [
