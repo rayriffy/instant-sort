@@ -1,6 +1,5 @@
-src/
+__test__/
 .github/
 jest.config.js
-README.md
-tsconfig.json
-__test__/
+tsconfig.js
+yarn.lock

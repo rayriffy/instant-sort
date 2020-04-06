@@ -2,7 +2,7 @@
   "name": "instant-sort",
   "version": "1.1.1",
   "description": "The fastest sorting algorithm ever with the speed of O(1)",
-  "main": "dist",
+  "main": "src",
   "keywords": [
     "sort",
     "sorted",
@@ -18,15 +18,11 @@
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "jest": "^25.1.0",
-    "terser": "^4.6.3",
     "ts-jest": "^25.0.0",
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "build": "tsc",
-    "prepublish": "yarn build && yarn compress",
-    "test": "jest ./__test__",
-    "compress": "terser dist/index.js -o dist/index.js --compress --mangle"
+    "test": "jest ./__test__"
   },
   "dependencies": {}
 }
